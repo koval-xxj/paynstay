@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/location_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                style="@style/LocationLayout">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    >
+
+                    <LinearLayout
+                        app:layout_widthPercent="30%"
+                        app:layout_heightPercent="100%"
+                        android:orientation="vertical"
+                        >
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/gps_vals_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/agt_action_fail"
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        app:layout_widthPercent="70%"
+                        app:layout_heightPercent="100%"
+                        android:orientation="vertical"
+                        app:layout_marginLeftPercent="30%"
+                        >
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/LocTextView"
+                            android:text="fdfdfdfdfd"
+                            >
+                        </android.support.v7.widget.AppCompatTextView>
+
+                    </LinearLayout>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            style="@style/LocationLayout">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/AP_QrCode"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/forgot_password"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/AP_ScanQrCodeBtn"
+                android:textColor="@color/btn_text"
+                app:backgroundTint="@color/status_bar_orange"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

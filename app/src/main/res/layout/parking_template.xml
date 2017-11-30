@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout style="@style/LocationLayout">
+
+        <android.support.percent.PercentRelativeLayout style="@style/parking_list_container">
+
+            <LinearLayout
+                style="@style/parking_list_first_column"
+                >
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_title"
+                    android:id="@+id/park_title"
+                    android:text="Parking Title (Name)"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_address"
+                    android:text="Address: Zürich, Test str. 77"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_status"
+                    android:text="Status: Deactivated"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_created_date"
+                    android:text="Created: 20.10.2017"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_tarrifs_qtv"
+                    android:text="Tariffs quantity: 3"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/parking_list_second_column">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/parking_info"
+                    style="@style/parking_list_park_info"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout style="@style/LocLayoutBorderBottom"></LinearLayout>
+
+</LinearLayout>

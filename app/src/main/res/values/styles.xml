@@ -1,0 +1,142 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/status_bar_orange</item>
+        <item name="searchViewStyle">@style/AppSearchViewStyle</item>
+    </style>
+
+    <style name="AppSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+        <item name="queryBackground">@android:color/transparent</item>
+        <item name="searchIcon">@drawable/icon_toolbar_search</item>
+        <item name="closeIcon">@drawable/icon_toolbar_clear</item>
+        <item name="queryHint">@string/search_hint</item>
+        <item name="android:imeActionId">6</item>
+    </style>
+
+    <!--Location List-->
+    <style name="LocCommonVals">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LocationLayout" parent="LocCommonVals">
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LocTextView" parent="LocCommonVals">
+        <item name="android:textSize">15dp</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
+
+    <style name="LocLayoutBorderBottom" parent="LocCommonVals">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/status_bar_orange</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="commonBtnStyle">
+        <item name="android:layout_width">251dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/btn_text</item>
+    </style>
+
+    <!--Add Tarriffs-->
+
+    <style name="add_tarriff_container" parent="LocCommonVals">
+        <item name="android:layout_height">130dp</item>
+    </style>
+
+    <style name="tarriff_time_description" parent="LocTextView">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="tarriff_time_text_view" parent="LocTextView">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="tarriff_price_text_view" parent="LocTextView">
+        <item name="android:hint">@string/AP_PricePerHour</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="tarriff_image_delete">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/agt_action_fail</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <style name="tarriff_first_column">
+        <item name="layout_widthPercent">45%</item>
+        <item name="layout_heightPercent">100%</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tarriff_second_column" parent="tarriff_first_column">
+        <item name="layout_marginLeftPercent">45%</item>
+    </style>
+
+    <style name="tarriff_third_column" parent="tarriff_first_column">
+        <item name="layout_widthPercent">10%</item>
+        <item name="layout_marginLeftPercent">90%</item>
+    </style>
+
+    <style name="tarriff_max_time_text_view" parent="tarriff_time_text_view">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!--Location List-->
+    <style name="parking_list_container" parent="LocCommonVals">
+        <item name="android:layout_height">106dp</item>
+    </style>
+
+    <style name="parking_title" parent="LocTextView">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="parking_text_values" parent="LocTextView">
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="parking_list_first_column" parent="tarriff_first_column">
+        <item name="layout_widthPercent">85%</item>
+    </style>
+
+    <style name="parking_list_second_column" parent="tarriff_first_column">
+        <item name="layout_widthPercent">15%</item>
+        <item name="layout_marginLeftPercent">85%</item>
+    </style>
+
+    <style name="parking_list_park_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/icon_arrow_next</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+</resources>

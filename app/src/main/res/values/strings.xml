@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">paynstay</string>
+
+    <string name="no_internet_connection">Enable the internet connection.</string>
+
+    <!--Base Activity-->
+    <string name="base_act_title">PaynStay Admin</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="search_hint">Company name</string>
+    <string name="btn_forgot_password">Forgot Password</string>
+    <string-array name="enter_email_notice">
+        <item>Please enter your email.</item>
+        <item>Check your email with the new password</item>
+    </string-array>
+    <string name="click_exit_app">Click once more to exit</string>
+
+    <!--Forgot password-->
+    <string name="enter_email">Enter Email</string>
+    <string name="forg_pass_btn_submit">Submit</string>
+    <string name="forg_pass_btn_Cancel">Cancel</string>
+
+    <!--Dashboard activity-->
+    <string name="DA_AddLocation">Add Location</string>
+    <string name="DA_LocationList">Location List</string>
+
+    <!--Add parking-->
+    <string name="AP_QrCode">QR Code</string>
+    <string name="AP_ScanQrCodeBtn">Scan QR Code</string>
+    <string name="AP_ScanGPSParamsBtn">Scan GPS params</string>
+    <string name="AP_NextStepBtn">Next Step</string>
+    <string name="AP_ParkSector">Parking Sector</string>
+    <string name="AP_ParkTitle">Parking Title</string>
+    <string name="AP_ParkAddress">Parking Address</string>
+    <string name="AP_Places_qtv">Places Quantity</string>
+    <string name="AP_PricePerHour">Price per Hour:</string>
+    <string name="AP_Tarriff_time_from">Tarriff time from</string>
+    <string name="AP_Tarriff_time_to">Tarriff time to</string>
+    <string name="AP_Submit">Submit</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_select_tarriff_time">Select time hour</string>
+    <string name="tip_klick_tarriff_time">Click to the tarriff time from and tarriff time to change. \n Click + to add the new tarriff</string>
+    <string name="AP_base_time_from_val">10:00</string>
+    <string name="AP_base_time_to_val">11:00</string>
+    <string name="AP_tarriff_max_time">Max Time:</string>
+    <string name="AP_scan_gps_params">Scan Gps params</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="AL">Sasha_Grey</string>
+    <string name="AP">egor007</string>
+    <string name="title_activity_add_location">Add Location</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!--Add Location-->
+    <string name="AL_step_one">Step one</string>
+    <string name="AL_step_two">Step two</string>
+
+    <!--Barcode-->
+    <string name="QrRead_ActivityTitle">Qr Read Activity</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="barcode_failure">No barcode captured</string>
+
+    <!--Parking List-->
+    <string name="PL_Adress">Address: </string>
+    <string name="PL_Status">Status: </string>
+    <string name="PL_Date_Created">Created: </string>
+    <string name="PL_Tarrifs_qtv">Tariffs quantity: </string>
+    <string name="PL_ParkStatusActivated">Activated</string>
+    <string name="PL_ParkStatusDeactivated">Deactivated</string>
+
+    <!--Tariffs List-->
+    <string name="tar_list_act_label">Tariffs List</string>
+    <string name="tar_list_park_position">Position:</string>
+    <string name="tar_list_park_code">Parking code:</string>
+    <string name="tar_list_longitude">Longitude:</string>
+    <string name="tar_list_latitude">Latitude:</string>
+    <string name="tar_list_position_undefined">Undefined</string>
+    <string name="tar_list_valid_from">Valid from:</string>
+    <string name="tar_list_valid_to">Valid to:</string>
+
+    <!--Error email report-->
+    <string name="crash_toast_text">Error Report</string>
+
+</resources>

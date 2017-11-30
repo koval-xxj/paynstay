@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="valpio_k.paynstay.activities.AddLocationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/add_location_step_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    >
+
+                    <LinearLayout
+                        style="@style/LocationLayout">
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            >
+
+                            <LinearLayout
+                                app:layout_widthPercent="30%"
+                                app:layout_heightPercent="100%"
+                                android:orientation="vertical"
+                                >
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/gps_values_result"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/agt_action_fail"
+                                    android:layout_marginTop="5dp"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                app:layout_widthPercent="70%"
+                                app:layout_heightPercent="100%"
+                                android:orientation="vertical"
+                                app:layout_marginLeftPercent="30%"
+                                >
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/gps_params_text"
+                                    style="@style/LocTextView"
+                                    android:text="@string/AP_scan_gps_params"
+                                    >
+                                </android.support.v7.widget.AppCompatTextView>
+
+                            </LinearLayout>
+
+                        </android.support.percent.PercentRelativeLayout>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_detect_fused_location"
+                            android:layout_width="251dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/AP_ScanGPSParamsBtn"
+                            android:textColor="@color/btn_text"
+                            app:backgroundTint="@color/status_bar_orange"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LocationLayout">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/qr_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/AP_QrCode"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/use_flash"
+                            android:id="@+id/use_flash"
+                            />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_scan_qr"
+                            android:layout_width="251dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/AP_ScanQrCodeBtn"
+                            android:textColor="@color/btn_text"
+                            app:backgroundTint="@color/status_bar_orange"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_location_step_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <LinearLayout
+                        style="@style/LocationLayout">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/park_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/AP_ParkTitle"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/park_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/AP_ParkAddress"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/park_palces_qtv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/AP_Places_qtv"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/LocTextView"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:text="@string/tip_klick_tarriff_time"
+                            >
+
+                        </android.support.v7.widget.AppCompatTextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tarriffs_layout"
+                        style="@style/LocationLayout">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LocationLayout">
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            >
+
+                            <LinearLayout
+                                app:layout_widthPercent="10%"
+                                app:layout_heightPercent="100%"
+                                android:orientation="vertical"
+                                app:layout_marginLeftPercent="90%"
+                                >
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/add_price_for_car_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/plus_icon"
+                                    android:layout_marginTop="5dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LocationLayout"
+                        >
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/add_park_submit"
+                            android:layout_width="251dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/AP_Submit"
+                            android:textColor="@color/btn_text"
+                            app:backgroundTint="@color/status_bar_orange"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

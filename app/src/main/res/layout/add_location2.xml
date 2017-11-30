@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/location_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                style="@style/LocationLayout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/park_sector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/AP_ParkSector"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/park_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/AP_ParkAddress"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LocationLayout">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    >
+
+                    <LinearLayout
+                        app:layout_widthPercent="50%"
+                        app:layout_heightPercent="100%"
+                        android:orientation="vertical"
+                        >
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/AP_PricePerHour"
+                                android:inputType="numberDecimal"
+                                android:maxLines="1"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Spinner
+                            android:id="@+id/planets_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        app:layout_widthPercent="40%"
+                        app:layout_heightPercent="100%"
+                        android:orientation="vertical"
+                        app:layout_marginLeftPercent="50%"
+                        >
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/AP_PricePerHour"
+                                android:inputType="numberDecimal"
+                                android:maxLines="1"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        app:layout_widthPercent="10%"
+                        app:layout_heightPercent="100%"
+                        android:orientation="vertical"
+                        app:layout_marginLeftPercent="90%"
+                        >
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/gps_vals_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/icon_remove_ad"
+                            android:layout_marginTop="25dp"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LocationLayout">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    >
+
+                    <LinearLayout
+                        app:layout_widthPercent="10%"
+                        app:layout_heightPercent="100%"
+                        android:orientation="vertical"
+                        app:layout_marginLeftPercent="90%"
+                        >
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/add_price_for_car_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/plus_icon"
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LocationLayout"
+                >
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/next_step"
+                    android:layout_width="251dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/AP_Submit"
+                    android:textColor="@color/btn_text"
+                    app:backgroundTint="@color/status_bar_orange"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

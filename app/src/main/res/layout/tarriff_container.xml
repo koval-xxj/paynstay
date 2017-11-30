@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        style="@style/add_tarriff_container"
+        >
+
+        <LinearLayout
+            style="@style/tarriff_first_column"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tarriff_time_description"
+                android:text="@string/AP_Tarriff_time_from"
+                >
+
+            </android.support.v7.widget.AppCompatTextView>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tarriff_time_text_view"
+                android:id="@+id/first_tariff_time_from"
+                android:text="@string/AP_base_time_from_val"
+                >
+
+            </android.support.v7.widget.AppCompatTextView>
+
+            <!--<Spinner-->
+                <!--android:id="@+id/car_type_spinner"-->
+                <!--style="@style/LocCommonVals" />-->
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tarriff_time_description"
+                android:text="@string/AP_tarriff_max_time"
+                android:layout_gravity="center_vertical"
+                >
+            </android.support.v7.widget.AppCompatTextView>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tarriff_time_text_view"
+                android:id="@+id/max_time_view"
+                android:text="@string/AP_base_time_to_val"
+                >
+            </android.support.v7.widget.AppCompatTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/tarriff_second_column"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tarriff_time_description"
+                android:text="@string/AP_Tarriff_time_to"
+                >
+
+            </android.support.v7.widget.AppCompatTextView>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tarriff_time_text_view"
+                android:id="@+id/first_tariff_time_to"
+                android:text="@string/AP_base_time_to_val"
+                >
+
+            </android.support.v7.widget.AppCompatTextView>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/LocCommonVals">
+
+                <AutoCompleteTextView
+                    style="@style/tarriff_price_text_view"
+                    android:id="@+id/tarriff_price_per_hour"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/tarriff_third_column"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/delete_tarriff"
+                style="@style/tarriff_image_delete"
+                />
+
+        </LinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <!--<android.support.percent.PercentRelativeLayout-->
+        <!--style="@style/LocCommonVals"-->
+        <!--android:layout_height="30dp"-->
+        <!--&gt;-->
+
+        <!--<LinearLayout-->
+            <!--style="@style/tarriff_first_column"-->
+            <!--&gt;-->
+            <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--style="@style/tarriff_time_description"-->
+                <!--android:text="@string/AP_tarriff_max_time"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--&gt;-->
+            <!--</android.support.v7.widget.AppCompatTextView>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--style="@style/tarriff_second_column"-->
+            <!--&gt;-->
+            <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--style="@style/tarriff_max_time_text_view"-->
+                <!--android:id="@+id/max_time_view"-->
+                <!--android:text="@string/AP_base_time_to_val"-->
+                <!--&gt;-->
+            <!--</android.support.v7.widget.AppCompatTextView>-->
+        <!--</LinearLayout>-->
+
+    <!--</android.support.percent.PercentRelativeLayout>-->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/status_bar_orange">
+
+    </android.support.v7.widget.AppCompatTextView>
+
+</LinearLayout>

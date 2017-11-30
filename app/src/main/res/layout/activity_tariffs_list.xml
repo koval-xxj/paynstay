@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activities.LocationListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <include layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/parking_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                >
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_title"
+                    android:id="@+id/park_title"
+                    android:text="Parking Title (Name)"
+                    android:textAlignment="center"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_address"
+                    android:text="Address: Zürich, Test str. 77"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_status"
+                    android:text="Status: Deactivated"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_created_date"
+                    android:text="Created: 20.10.2017"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_tarrifs_qtv"
+                    android:text="Tariffs quantity: 3"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_code"
+                    android:text="Code"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/parking_text_values"
+                    android:id="@+id/park_position"
+                    android:text="Position"
+                    >
+                </android.support.v7.widget.AppCompatTextView>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LocLayoutBorderBottom"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tariffs_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
